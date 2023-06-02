@@ -14,8 +14,7 @@
   - **Performance Enhancements**: Comparative experiments with SAIML-CED show improved image classification accuracy on datasets such as MNIST, Cifar100, ImageNet-subset, and ImageNet, demonstrating performance improvements of approximately 2%, 5%, 4%, and 8% respectively over previous methods. Furthermore, through ablation experiments, the importance of each module is evaluated, and optimal parameter selection for posterior parameters is estimated.
 
   In conclusion, **SAIML-CED** is an advanced and extensible system, designed with a focus on achieving incremental learning without compromising on past knowledge, thereby making it an innovative solution to the problem of catastrophic forgetting.
-
-- ​      
+    
 
 ![](/Figures/3.3.png)
 
