@@ -17,7 +17,7 @@
 
 - ​      
 
-![](Figures\3.3.png)
+![](/Figures/3.3.png)
 
 
 ### Release History
@@ -75,7 +75,7 @@ Our Related Papers
 
 ### Brife Defination
 
-![](Figures\31.png)
+![](/Figures/31.png)
 
 ### Main Objectives
 
