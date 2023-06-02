@@ -15,7 +15,7 @@
 
   In conclusion, **SAIML-CED** is an advanced and extensible system, designed with a focus on achieving incremental learning without compromising on past knowledge, thereby making it an innovative solution to the problem of catastrophic forgetting.
     
-html <div align=center> <img src="Figures/3.3.png" width = 80%/> </div>
+html <div align=center> <img src="Figures/3.3.png" width = 100%/> </div>
 
 
 
