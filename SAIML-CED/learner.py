@@ -172,7 +172,7 @@ class Learner():
                         else:
                             BCELoss = F.binary_cross_entropy_with_logits(class_pre_ce[:, ai: bi], class_tar_ce[:, ai:bi])
                             CEDLOSS = adjust_magnitude(F.binary_cross_entropy_with_logits(class_pre_ce[:, ai: bi], class_tar_ce[:, ai:bi]), compute_kl_divergence(model, old_model, new_data, old_data))
-                            loss = BCELoss + CEDLOSS
+                            loss = BCELoss +  0.05 * CEDLOSS
 
                         self.optimizer.zero_grad()
                         loss.backward()
