@@ -14,7 +14,7 @@ def adjust_magnitude(a, b):
     mag_b = math.floor(math.log10(abs(b))) if b != 0 else 0
 
     # 调整b的数量级以匹配a的数量级
-    return b * 10**(mag_a - mag_b)
+    return  b * 10**(mag_a - mag_b - 2)
 
 class ResNet_features(nn.Module):
     def __init__(self, original_model):
@@ -172,7 +172,7 @@ class Learner():
                         else:
                             BCELoss = F.binary_cross_entropy_with_logits(class_pre_ce[:, ai: bi], class_tar_ce[:, ai:bi])
                             CEDLOSS = adjust_magnitude(F.binary_cross_entropy_with_logits(class_pre_ce[:, ai: bi], class_tar_ce[:, ai:bi]), compute_kl_divergence(model, old_model, new_data, old_data))
-                            loss = BCELoss +  0.05 * CEDLOSS
+                            loss = BCELoss +  CEDLOSS
 
                         self.optimizer.zero_grad()
                         loss.backward()
