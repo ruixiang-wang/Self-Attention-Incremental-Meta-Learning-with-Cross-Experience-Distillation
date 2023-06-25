@@ -9,11 +9,9 @@ from utils.progress.progress.bar import Bar
 import math
 
 def adjust_magnitude(a, b):
-    # 获取a和b的数量级
     mag_a = math.floor(math.log10(abs(a))) if a != 0 else 0
     mag_b = math.floor(math.log10(abs(b))) if b != 0 else 0
 
-    # 调整b的数量级以匹配a的数量级
     return  b * 10**(mag_a - mag_b - 2)
 
 class ResNet_features(nn.Module):
